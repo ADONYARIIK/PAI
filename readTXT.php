@@ -13,6 +13,10 @@ $numbers = array_map(function($number)
 }, $matches[0]);
 
 
+$aver = array_sum($numbers) / count($numbers);
+$min = min($numbers);
+$max = max($numbers);
+
 $evenNumbers = [];
 $resNumbers = [];
 
@@ -29,4 +33,9 @@ foreach ($numbers as $number) {
 
 file_put_contents($even, implode(PHP_EOL, $evenNumbers));
 file_put_contents($res, implode(PHP_EOL, $resNumbers));
+
+
+echo "Średnia wynosi: " . $aver . "<br>";
+echo "Minimalna liczba wynosi: " . $min . "<br>";
+echo "Maksymalna liczba wynosi: " . $max . "<br>";
 ?>
