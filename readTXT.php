@@ -37,5 +37,5 @@ file_put_contents($res, implode(PHP_EOL, $resNumbers));
 
 echo "Średnia wynosi: " . $aver . "<br>";
 echo "Minimalna liczba wynosi: " . $min . "<br>";
-echo "Maksymalna liczba wynosi: " . $max . "<br>";
+echo "Maksymalna liczba wynosi: " . $max;
 ?>
